@@ -3,17 +3,27 @@
  * project5.cpp
  * Fall 2025
  *
- * Partner 1:
- * Partner 2:
- * Date:
+ * Partner 1: Medhashree Adhikari
+ * Partner 2: Slok Rajbhandari
+ * Date: Wednesday, November 10, 2025
+ * Acknowledgements: ...
  */
 
 #include "project5.hpp"
 
 using namespace std;
 
-/*
+/**
  * ED - solves the given ED problem using DP or Memoization.
+ * 
+ * INPUTS
+ *      string &src: 
+ *      string &dest: 
+ *      bool useASM: 
+ *      bool useDP: 
+ * 
+ * OUTPUT
+ *      vector<int> table: 
  */
 vector<int> ED(string &src, string &dest, bool useASM, bool useDP) {
     vector<int> table;
@@ -25,8 +35,15 @@ vector<int> ED(string &src, string &dest, bool useASM, bool useDP) {
     return table;
 }
 
-/*
+/**
  * ED_DP - create and fill the table iteratively using dynamic programming.
+ * INPUTS
+ *      string &src: 
+ *      string &dest: 
+ *      bool useASM: 
+ * 
+ * OUTPUT
+ *      vector<int> table: 
  */
 vector<int> ED_DP(string &src, string &dest, bool useASM) {
     // Get string lengths for ease of use.
@@ -41,8 +58,15 @@ vector<int> ED_DP(string &src, string &dest, bool useASM) {
     return table;
 }
 
-/*
+/**
  * ED_Mem - create and fill the table recursively using memoization.
+ * INPUTS
+ *      string &src: 
+ *      string &dest: 
+ *      bool useASM: 
+ * 
+ * OUTPUT
+ *      vector<int> table: 
  */
 vector<int> ED_Mem(string &src, string &dest, bool useASM) {
     // Get string lengths for ease of use.
@@ -57,32 +81,56 @@ vector<int> ED_Mem(string &src, string &dest, bool useASM) {
     return table;
 }
 
-/*
+/**
  * ED_Mem_helper - recursive helper function for memoization.
  *                 Note: numCols input for ease of indexing.
+ * INPUTS
+ *      string &src: 
+ *      string &dest: 
+ *      bool useASM: 
+ *      int numCols: 
+ * 
+ * OUTPUT
+ *      int: 
  */
 int ED_Mem_helper(string &src, string &dest, bool useASM, int numCols,
                   int i, int j, vector<int> &table) {
     return -1;
 }
 
-/*
+/**
  * getNumEdits - given a filled table, return the min number of edits.
+ * 
+ * INPUTS
+ *      string &src: 
+ *      string &dest: 
+ *      vector<int> &table: 
+ * 
+ * OUTPUTS
+ *      int: 
  */
 int getNumEdits(string &src, string &dest, vector<int> &table) {
     int numEdits;
     return numEdits;
 }
 
-/*
+/**
  * getEdits - reconstruct the optimal edits given a filled table.
+ * 
+ * INPUTS
+ *      string &src: 
+ *      string &dest: 
+ *      vector<int> &table: 
+ * 
+ * OUTPUTS
+ *      vector<Edit>: 
  */
 vector<Edit> getEdits(string &src, string &dest, vector<int> &table) {
     vector<Edit> edits;
     return edits;
 }
 
-/*
+/**
  * printTable: prints the table so it looks nice.
  *
  * INPUTS

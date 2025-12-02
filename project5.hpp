@@ -3,9 +3,10 @@
  * project5.hpp
  * Fall 2025
  *
- * Partner 1:
- * Partner 2:
- * Date:
+ * Partner 1: Medhashree Adhikari
+ * Partner 2: Slok Rajbhandari
+ * Date: Wednesday, November 10, 2025
+ * Acknowledgements: ...
  */
 
 #ifndef PROJECT5_HPP_
