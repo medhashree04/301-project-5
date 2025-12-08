@@ -119,9 +119,18 @@ bool testCase(string &label, string &src, string &dest, int correctNumEdits,
     }
 
     // Check for correctness.
-    if ( dest == edited ) {
+    if ( dest == edited and numEdits == correctNumEdits) {
         return true;
     } else {
+        // Add some info for why failure...
+        if (verbosity) {
+            if (dest != edited) {
+                cout << "Failed test due to wrong edits." << endl;
+            }
+            if (numEdits != correctNumEdits) {
+                cout << "Failed test due to wrong table info." << endl;
+            }
+        }
         return false;
     }
 }
