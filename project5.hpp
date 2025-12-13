@@ -5,8 +5,7 @@
  *
  * Partner 1: Medhashree Adhikari
  * Partner 2: Slok Rajbhandari
- * Date: Wednesday, November 10, 2025
- * Acknowledgements: ...
+ * Date: Saturday, December 13, 2025
  */
 
 #ifndef PROJECT5_HPP_
